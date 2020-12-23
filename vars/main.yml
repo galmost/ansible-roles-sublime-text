@@ -7,3 +7,7 @@ sublime_installed_packages_dir: "{{ sublime_dir }}/Installed Packages"
 
 sublime_package_control_url: https://packagecontrol.io
 sublime_package_control_package_path: "{{ sublime_installed_packages_dir }}/Package Control.sublime-package"
+
+
+sublime_local_dir: "{{ sublime_dir }}/Local"
+sublime_license_path: "License.sublime_license"
