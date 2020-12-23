@@ -64,7 +64,7 @@
     state: directory
   when: sublime_license and check_sublime_local_dir.stat.exists == False
 
-- name: Check licence key file location
+- name: Check license key file location
   stat:
     path: "{{ sublime_license_path }}"
   register: check_sublime_license_key
