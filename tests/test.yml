@@ -3,6 +3,21 @@
   roles:
     - sublime-text
   vars:
+    sublime_license: true
+    sublime_license_key: |
+                        ----- BEGIN LICENSE -----
+                        John Doe
+                        Single User License
+                        XXXX-XXXXXXX-XXXXXX
+                        YYYYYYYY YYYYYYYY YYYYYYYY YYYYYYYY
+                        YYYYYYYY YYYYYYYY YYYYYYYY YYYYYYYY
+                        YYYYYYYY YYYYYYYY YYYYYYYY YYYYYYYY
+                        YYYYYYYY YYYYYYYY YYYYYYYY YYYYYYYY
+                        YYYYYYYY YYYYYYYY YYYYYYYY YYYYYYYY
+                        YYYYYYYY YYYYYYYY YYYYYYYY YYYYYYYY
+                        YYYYYYYY YYYYYYYY YYYYYYYY YYYYYYYY
+                        YYYYYYYY YYYYYYYY YYYYYYYY YYYYYYYY
+                        ------ END LICENSE ------
     sublime_version: 3
     sublime_packages:
       - 'https://github.com/skuroda/Sublime-AdvancedNewFile.git'
