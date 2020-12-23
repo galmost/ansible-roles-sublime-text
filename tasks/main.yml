@@ -64,14 +64,19 @@
     state: directory
   when: sublime_license and check_sublime_local_dir.stat.exists == False
 
+- name: Check licence key file location
+  stat:
+    path: "{{ sublime_license_path }}"
+  register: check_sublime_license_key
+  when: sublime_license
+
 - name: Add license key
   lineinfile:
     path: "{{ sublime_license_path }}"
     line: "{{ sublime_license_key }}"
-    regexp: "----- BEGIN LICENSE .*"
     state: present
     create: yes
-  when: sublime_license
+  when: sublime_license and check_sublime_license_key.stat.exists == False
 
 
 
