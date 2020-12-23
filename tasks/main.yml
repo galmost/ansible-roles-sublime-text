@@ -45,7 +45,7 @@
   git:
     repo: "{{ item.name | default(item) }}"
     version: "{{ item.version | default('master') }}"
-    dest: "{{ sublime_packages_dir }}"
+    dest: "{{ sublime_packages_dir }}/{{ item.name | default(item) | regex_replace('^.+/([^/.]+)(\\.git)*$','\\1') }}"
     accept_hostkey: "yes"
   with_items: "{{ sublime_packages }}"
   when: sublime_package_control
@@ -77,7 +77,3 @@
     state: present
     create: yes
   when: sublime_license and check_sublime_license_key.stat.exists == False
-
-
-
-
