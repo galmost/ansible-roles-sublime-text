@@ -6,4 +6,6 @@ sublime_version: 3
 
 sublime_package_control: true
 
+sublime_license: false
+
 sublime_packages: []
