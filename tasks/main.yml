@@ -68,9 +68,10 @@
   lineinfile:
     path: "{{ sublime_license_path }}"
     line: "{{ sublime_license_key }}"
+    regexp: "----- BEGIN LICENSE .*"
     state: present
-    mode: 0644
     create: yes
+  when: sublime_license
 
 
 
