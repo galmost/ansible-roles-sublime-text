@@ -10,4 +10,4 @@ sublime_package_control_package_path: "{{ sublime_installed_packages_dir }}/Pack
 
 
 sublime_local_dir: "{{ sublime_dir }}/Local"
-sublime_license_path: "License.sublime_license"
+sublime_license_path: "{{ sublime_local_dir }}/License.sublime_license"
