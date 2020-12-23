@@ -4,6 +4,10 @@
 # Set the version for Sublime-Text
 sublime_version: 3
 
+# Install plugins automatically
 sublime_package_control: true
-
 sublime_packages: []
+
+# Install license key
+sublime_license: false
+sublime_license_key: ""
